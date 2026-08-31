@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://kavindanipun.github.io/furniture-fit/sitemap.xml
