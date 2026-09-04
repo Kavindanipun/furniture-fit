@@ -5,6 +5,7 @@ Live target: `https://kavindanipun.github.io/furniture-fit/`
 ## What is included
 - Main furniture fit calculator page
 - Dedicated sofa/couch doorway page
+- Dedicated sofa diagonal depth calculator page
 - Furniture delivery measuring guide
 - Doorway measuring guide
 - Updated sitemap with all canonical URLs and discoverable images
@@ -12,6 +13,7 @@ Live target: `https://kavindanipun.github.io/furniture-fit/`
 - Search/Discover-friendly 1200×675 images and a 96×96 favicon
 - Open Graph and Twitter metadata
 - WebPage + Breadcrumb structured data where appropriate
+- WebApplication structured data for interactive calculators
 - Improved calculator that checks rotated rectangular faces from 0° to 90°
 - Internal links between related pages
 
@@ -21,7 +23,7 @@ Upload the entire folder contents to the repository root. Keep the subfolders ex
 ## After publishing
 1. Open each live URL and confirm it loads.
 2. In Google Search Console → Sitemaps, submit: `sitemap.xml`.
-3. Use URL Inspection and request indexing for the home page and the three new guide URLs.
+3. Use URL Inspection and request indexing for the changed home page, sofa guide, measuring guide and the new diagonal calculator URL.
 4. Do not repeatedly request indexing every day. Give Google time to recrawl and process the changes.
 5. Review Search Console Performance using at least a 7-day and then 28-day window. Prioritize queries that already receive impressions and sit near page 1–3.
 

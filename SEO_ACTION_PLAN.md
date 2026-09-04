@@ -1,47 +1,31 @@
-# SEO action plan for FitBeforeYouBuy
+# Search Console update — 4 September 2026
 
-## Already implemented in this build
-- Clean, concise home title targeting the broad furniture intent plus sofa/doorway intent.
-- Exact-intent sofa page for queries such as “will my sofa fit” and “will my sofa fit through the door”.
-- Separate high-value informational pages for furniture delivery measurement and doorway measurement.
-- Internal linking across the calculator and guides.
-- Unique page titles, H1s, meta descriptions and canonical URLs.
-- Crawlable HTML content; calculator enhancement does not hide the core answers behind JavaScript.
-- Large image previews enabled, 1200×675 relevant images, descriptive alt text, Open Graph images and image sitemap entries.
-- 96×96 PNG favicon.
-- Updated XML sitemap and robots.txt.
-- WebPage/Breadcrumb structured data; no fake ratings or review markup.
-- FAQ content remains visible, but FAQ rich-result markup is intentionally not used.
-- Fast static assets, no external libraries, deferred JavaScript, explicit image dimensions, responsive layout and accessible inputs.
-- Calculator now tests 0°–90° rotated rectangular faces instead of only simple straight orientation checks.
+This build was refined around the real query patterns shown in the supplied Search Console screenshots.
 
-## Do immediately after upload
-1. Deploy the entire folder to the GitHub Pages repository root.
-2. Verify these four URLs load:
-   - `/furniture-fit/`
-   - `/furniture-fit/sofa-fit-through-door/`
-   - `/furniture-fit/measure-furniture-for-delivery/`
-   - `/furniture-fit/measure-doorway-for-furniture/`
-3. Search Console → Sitemaps → submit `sitemap.xml`.
-4. URL Inspection → request indexing once for each of the four URLs.
-5. Test the home URL in Google Rich Results Test and confirm there are no blocking crawl/indexing problems.
+## Query → page mapping
+- `will my sofa fit calculator` → home + sofa guide
+- `how to measure if furniture will fit` → measuring guide
+- `will this furniture fit in my car calculator` → clarified in home FAQ (the tool is not presented as a full vehicle-loading simulator)
+- `will my furniture fit calculator` → home
+- `how to tell if sofa will fit through doorway` → sofa guide + doorway guide
+- `sofa diagonal depth calculator` → new dedicated interactive diagonal calculator
+- `furniture fitting`, `will my sofa fit`, `couch fit` → home + sofa guide
 
-## What to monitor
-Use Search Console Performance with 7-day and 28-day windows. Watch:
-- Impressions
-- Clicks
-- CTR
-- Average position
-- Queries with impressions but position roughly 11–40
-- Pages gaining new queries
+## What changed
+- Home title, description, H1 and visible copy now align more closely with the strongest observed sofa-calculator intent while retaining broad furniture-fit relevance.
+- Measuring guide now targets the exact informational intent “how to measure if furniture will fit.”
+- Sofa guide copy and internal links were strengthened around “will my sofa fit” and doorway-fit intent.
+- Added `/sofa-diagonal-depth-calculator/` with a real height × depth diagonal calculator, clear formula, and strong caveats so it does not over-promise doorway fit.
+- Added WebApplication structured data for the interactive tools, without ratings/review spam.
+- Updated internal links and sitemap.
+- Updated `dateModified`/`lastmod` to 2026-09-04 on changed pages.
 
-Prioritize real queries that Google is already showing the site for. Improve the exact page that receives those impressions rather than stuffing every query into the home title.
-
-## Off-site work that code alone cannot do
-- Earn real links/mentions from relevant moving, furniture, interior-design, home-improvement or measurement resources.
-- Share the calculator where it genuinely solves a user problem; avoid automated link building and paid link schemes.
-- If the project becomes long-term, consider a memorable custom domain so the brand can build its own reputation independent of a GitHub path.
-- Add genuinely useful new content only when Search Console shows a distinct user intent; do not create dozens of near-duplicate keyword pages.
+## Deploy / Search Console
+1. Upload this full build to the same GitHub Pages repo/path; do not create a new project URL.
+2. Verify all five sitemap URLs load.
+3. Search Console → Sitemaps: resubmit `sitemap.xml` if needed.
+4. URL Inspection → Request indexing once for the changed home page, sofa guide, measuring guide, and new diagonal calculator page.
+5. Avoid editing titles every day. Compare 7-day and 28-day performance after Google has recrawled the changes.
 
 ## Important
-No legitimate SEO implementation can guarantee the #1 result. Ranking depends on query demand, competition, content usefulness, page experience, site reputation and links/mentions in addition to technical SEO.
+The 24-hour average position is based on very few impressions, so it is a promising signal but not enough data to claim a stable ranking improvement. This build prioritizes the query patterns that Google is already testing rather than adding large amounts of near-duplicate content.
