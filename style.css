@@ -34,3 +34,9 @@ footer{border-top:1px solid #ece6f1;padding:35px 0 50px;display:grid;grid-templa
 .mini-calc{max-width:900px;margin:20px 0 60px;padding:30px;border:1px solid #e8e2f2;border-radius:26px;background:#fff;box-shadow:0 18px 55px rgba(62,32,104,.07)}
 .mini-calc h2{font-size:clamp(30px,4vw,48px);line-height:1.08;letter-spacing:-.035em;margin:8px 0 10px}.mini-calc>p{color:#625b70}.diag-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:end}.diag-form .primary{grid-column:1/-1}.diag-unit{border:1px solid #ded6eb;background:#faf8fd;border-radius:12px;padding:10px 14px;font-weight:750;cursor:pointer;color:#342c40}.diag-unit.active{background:#201932;color:#fff;border-color:#201932}.diag-unit:focus{outline:3px solid #bfa1ea;outline-offset:2px}
 @media(max-width:720px){.mini-calc{padding:18px}.diag-form{grid-template-columns:1fr}}
+
+/* Compact informational answers for searchers; maintain existing page design. */
+.seo-help{max-width:980px;margin:32px auto;padding:24px;border:1px solid rgba(125,140,160,.22);border-radius:16px}
+.seo-help h2{margin:0 0 12px}
+.seo-help p{line-height:1.75;margin:10px 0}
+@media(max-width:640px){.seo-help{margin:22px 14px;padding:18px}}
