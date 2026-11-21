@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Will My Sofa Fit Through My Door? Free Calculator &amp; Guide</title>
-<meta content="Will your sofa or couch fit through the door? Measure your sofa and clear doorway, check possible orientations and avoid delivery surprises." name="description"/>
+<meta content="Will my sofa fit through the door? Use our free sofa fit calculator with your sofa and doorway measurements. Check orientations, clearance and delivery tips." name="description"/>
 <meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/>
 <link href="https://kavindanipun.github.io/furniture-fit/sofa-fit-through-door/" rel="canonical"/>
 <link href="../images/favicon.png" rel="icon" sizes="96x96" type="image/png"/>
@@ -33,7 +33,7 @@
       "name": "Will My Sofa Fit Through My Door? Free Calculator & Guide",
       "description": "A sofa and couch doorway fit calculator and measuring guide.",
       "primaryImageOfPage": "https://kavindanipun.github.io/furniture-fit/images/measure-sofa-for-doorway.png",
-      "dateModified": "2026-10-14",
+      "dateModified": "2026-11-21",
       "inLanguage": "en"
     },
     {
@@ -65,8 +65,51 @@
 <div class="eyebrow">SOFA &amp; COUCH FIT GUIDE</div>
 <h1>Will my sofa fit through the door?</h1>
 <p class="lead">Use the free sofa fit calculator to compare your sofa or couch width, height and depth with the doorway’s clear opening. It tests straight and rotated rectangular orientations before delivery day.</p>
-<div class="guide-actions"><a class="primary-link" href="../#calculator">Open the free sofa fit calculator</a><a class="secondary-link" href="#measure-sofa">How to measure</a><a class="secondary-link" href="../sofa-diagonal-depth-calculator/">Diagonal depth calculator</a></div>
+<div class="guide-actions"><a class="primary-link" href="#calculator">Use the sofa fit calculator</a><a class="secondary-link" href="#measure-sofa">How to measure</a><a class="secondary-link" href="../sofa-diagonal-depth-calculator/">Diagonal depth calculator</a></div>
 </section>
+<section aria-labelledby="calculator-title" class="calc-wrap" id="calculator">
+<div class="calc-head">
+<div><div class="eyebrow">FIT CALCULATOR</div><h2 id="calculator-title">Will my sofa fit through the door? Check your measurements</h2></div>
+<p>Measure your sofa width, height and depth plus the narrowest clear door opening. Use an example preset only as a demonstration; replace those figures with your actual measurements.</p>
+</div>
+<div aria-label="Measurement units" class="unitbar" role="group">
+<button aria-pressed="true" class="unit active" data-unit="in" type="button">Inches (US)</button>
+<button aria-pressed="false" class="unit" data-unit="cm" type="button">Centimetres (metric)</button>
+</div>
+<div aria-label="Example furniture presets" class="preset-wrap">
+<span class="preset-label">Load an example:</span>
+<button class="preset" data-preset="sofa" type="button">3-seat sofa</button>
+<button class="preset" data-preset="loveseat" type="button">Loveseat</button>
+<button class="preset" data-preset="armchair" type="button">Armchair</button>
+<button class="preset" data-preset="dresser" type="button">Dresser</button>
+<button class="preset" data-preset="mattress" type="button">Queen mattress</button>
+</div>
+<form id="fitForm">
+<div class="grid">
+<fieldset>
+<legend><b>1</b> Furniture dimensions</legend>
+<label>Width / length <span>longest side</span><input id="fw" inputmode="decimal" min="0.1" placeholder="84" required="" step="0.1" type="number"/></label>
+<label>Height <span>floor to highest point</span><input id="fh" inputmode="decimal" min="0.1" placeholder="34" required="" step="0.1" type="number"/></label>
+<label>Depth <span>front to back</span><input id="fd" inputmode="decimal" min="0.1" placeholder="38" required="" step="0.1" type="number"/></label>
+</fieldset>
+<fieldset>
+<legend><b>2</b> Door clear opening</legend>
+<label>Clear width <span>narrowest usable gap</span><input id="dw" inputmode="decimal" min="0.1" placeholder="36" required="" step="0.1" type="number"/></label>
+<label>Clear height <span>floor to usable top</span><input id="dh" inputmode="decimal" min="0.1" placeholder="80" required="" step="0.1" type="number"/></label>
+<label>Safety margin <span>recommended buffer</span><input id="clearance" inputmode="decimal" min="0" step="0.1" type="number" value="1"/></label>
+</fieldset>
+<fieldset>
+<legend><b>3</b> Destination room <em>optional</em></legend>
+<label>Room length <span>usable floor space</span><input id="rl" inputmode="decimal" min="0.1" placeholder="144" step="0.1" type="number"/></label>
+<label>Room width <span>usable floor space</span><input id="rw" inputmode="decimal" min="0.1" placeholder="120" step="0.1" type="number"/></label>
+<div class="field-help">Leave both room fields blank if you only want to test the doorway. The room check tests footprint only; walking space and layout are separate.</div>
+</fieldset>
+</div>
+<button class="primary" type="submit">Check if it fits →</button>
+</form>
+<div aria-live="polite" class="result" hidden="" id="result"></div>
+</section>
+
 <section class="answer-card compact">
 <div><div class="eyebrow">QUICK ANSWER</div><h2>A sofa can fit even when its overall width is wider than the door</h2><p>The sofa’s full length does not always need to cross the doorway side-to-side. Movers may lead with the depth or another dimension and rotate the piece. The important question is whether one of the sofa’s rectangular faces can clear the opening with enough room to maneuver.</p><p class="micro-note">A doorway calculation cannot prove that the sofa can make a tight turn immediately before or after the opening.</p></div>
 <figure><img alt="Diagram showing how to measure a sofa width, height and depth before checking a doorway" decoding="async" height="675" src="../images/measure-sofa-for-doorway.png" width="1200"/><figcaption>Use the maximum fixed dimensions of the sofa as it will be delivered.</figcaption></figure>
@@ -86,6 +129,10 @@
 <div class="callout"><strong>Use a safety margin.</strong> Exact-equal measurements are not comfortable delivery measurements. Small measuring errors, upholstery, protective wrapping and hands all need space.</div>
 <h2>What does the sofa fit calculator test?</h2>
 <p>The main calculator takes your three sofa dimensions and forms three rectangular faces: width × height, depth × height, and width × depth. It then samples rotations from 0° to 90° for each face and compares the rotated bounding width and height with the doorway after the safety margin. If you also enter room dimensions, it checks whether the sofa’s width-by-depth footprint fits the room in normal or rotated orientation.</p>
+<h2>How can I check whether my couch will fit through my door?</h2>
+<p>Measure the couch's maximum width, height and depth, then measure the <strong>clear usable</strong> door width and height with the door fully open. Enter all five measurements in the <a href="#calculator">sofa fit calculator above</a>, choose a safety margin, and compare the tested orientations. Before moving, check the hallway and turning space on both sides of the door; a positive screen is not a delivery guarantee.</p>
+<h2>Worked example: a sofa and a 32-inch doorway</h2>
+<p>Imagine a sofa measuring 84 × 34 × 38 inches and a doorway with a 32-inch clear width and 80-inch clear height. One of the sofa's shorter sides may still be the relevant face for passage rather than its full 84-inch length. Run these dimensions in the calculator as an <strong>example only</strong>, then replace them with measurements from your actual furniture. The usable opening and available maneuvering space determine the practical outcome.</p>
 <h2>What if my couch only fits at an angle?</h2>
 <p>A rotated result means the calculator found a 2D rectangular orientation that clears the door opening. In real life, that move requires enough free space to reach and maintain the angle. A wall directly opposite the door, a tight landing or a stair rail can make the maneuver impossible even when the opening itself is large enough.</p>
 <h2>What is sofa diagonal depth?</h2>
@@ -105,12 +152,18 @@
 <li>Space needed to turn before and after the doorway.</li>
 <li>Any stairs, elevators, gates or internal doors on the route.</li>
 </ol>
-<p><a class="text-cta" href="../#calculator">Enter those measurements in the free furniture fit calculator →</a></p>
+<p><a class="text-cta" href="#calculator">Enter those measurements in the sofa fit calculator →</a></p>
+<h2>Will my couch fit through my door? A practical test</h2>
+<p>For a couch or sofa, begin with the maximum fixed width (arm to arm), height and depth. Then measure the clear opening with the door fully open. Use the <a href="#calculator">sofa fit calculator above</a> to test rectangular faces and rotated orientations rather than comparing only the couch length with the door width.</p>
+<ol><li>Enter the sofa dimensions as delivered, including non-removable legs or arms.</li><li>Measure the narrowest usable doorway width and height, accounting for the frame and door hardware.</li><li>Apply a realistic safety margin and check the calculator's result.</li><li>Check the space on both sides of the doorway for turning, including hallway corners and the floor-to-ceiling height.</li><li>If the fit is close or the route is complicated, confirm with a professional mover or the seller before delivery.</li></ol>
+<h2>What if my sofa does not fit through the doorway?</h2>
+<p>First recheck the clear opening and dimensions; do not force the furniture through. Ask the seller whether removable legs, modular sections or manufacturer-approved disassembly are options. Measure the complete alternative route, if any, and consult a professional mover for tight pivots. Avoid removing structural parts or modifying a doorway without appropriate expertise.</p>
 <section class="seo-queries"><h2>Related furniture fit questions</h2><ul><li><a href="../sofa-diagonal-depth-calculator/">Sofa diagonal depth calculator</a></li><li><a href="../measure-furniture-for-delivery/">How to measure furniture for delivery</a></li><li><a href="../measure-doorway-for-furniture/">How to measure a doorway for furniture</a></li></ul></section></article>
 <section class="faq small-faq">
 <div class="eyebrow">SOFA FAQ</div><h2>Common sofa fit questions</h2>
 <details><summary>Can a sofa fit through a 30-inch or 32-inch door?</summary><p>There is no universal yes or no answer because sofa dimensions and the actual clear opening vary. Measure the specific sofa and the clear doorway, then test the dimensions. A sofa may fit with a different dimension leading through the opening.</p></details>
 <details><summary>Can I remove sofa legs to make it fit?</summary><p>Only if the manufacturer or retailer confirms that the legs are designed to be removed safely for delivery. If so, measure the reduced configuration and run a separate check.</p></details>
+<details><summary>Will my couch fit through a 30-inch doorway?</summary><p>It depends on the couch dimensions and the actual clear opening, which can be smaller than a nominal 30-inch door. Test its maximum height, depth and length against the measured opening, and verify turning space with your mover if clearance is tight.</p></details>
 <details><summary>Does tilting always make a sofa fit?</summary><p>No. Tilting can help at the doorway, but you also need enough room to create the angle and complete the move. Tight hallways, stairs and corners can still prevent delivery.</p></details>
 </section>
 </main>
